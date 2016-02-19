@@ -1,0 +1,44 @@
+Here is a list of very useful tutorials from the commmunity. That you should read if you know nothing about making private servers. This resource list is old but most should still work and this text file will be updated over time to include more tutorial links for you.
+
+- How to add custom scripts to your server 
+	http://www.ac-web.org/forums/showthread.php?145843-Trinity-How-to-add-a-c-script-to-your-core
+	
+- How to compile trinity on linux ubuntu - With pictures - This tutorial is for ubuntu linux users.
+	http://www.ac-web.org/forums/showthread.php?175234-How-to-compile-trinity-on-linux-ubuntu-With-pictures
+	
+- Making your Trinity server public.
+	http://www.ac-web.org/forums/showthread.php?111110-Making-your-Trinity-server-public
+	
+- How to Change to Color of Autobroadcast
+	http://www.ac-web.org/forums/showthread.php?135969-How-to-Change-to-Color-of-Autobroadcast
+	
+- How to bypass 32767 limits in the database.
+	http://www.ac-web.org/forums/showthread.php?141985-Trinity-How-to-bypass-32767-limits
+
+- How to create a Custom Extendedcost.
+    http://www.ac-web.org/forums/showthread.php?137284-How-to-create-a-Custom-Extendedcost-(The-Easy-Way)&highlight=
+
+- How to create custom Titles.
+	http://www.ac-web.org/forums/showthread.php?140353-DBC-How-to-create-custom-Titles-Trinity&highlight=
+
+- Creating scaling stat items (and heirlooms 3.3.5a)
+	http://www.ac-web.org/forums/showthread.php?180196
+
+- Using Multiple Language Locales
+	http://www.ac-web.org/forums/showthread.php?197513-guide-Using-Multiple-Language-Locales
+
+- Breaking News, An In-Depth Guide
+	http://www.ac-web.org/forums/showthread.php?196147-Tutorial-Breaking-News-An-In-Depth-Guide
+
+- How to change a dungeon into normal map.
+	http://www.ac-web.org/forums/showthread.php?211374
+	
+Special thanks to the users who made these tutorials. 
+	- Jameyboor
+	- Seejay
+	- Jeutie
+	- PrivateDonut
+	- DestinyKiller
+	- MyLilSuccy
+	
+	
