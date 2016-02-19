@@ -6,7 +6,7 @@ At the moment inside of this repo are the following scripts:
 - World Chat
 	- Supports .gm chat on BLIZZ icon.
 	- Colored to look like a normal chat channel that you would /join
-- Welcome On Login
+- Welcome On First Login
 	- Message is sent to the world on a new players first login.
 	- Has a couple variables you can tweak for easy editing.
 	- Is a good example of how to create a custom function.
