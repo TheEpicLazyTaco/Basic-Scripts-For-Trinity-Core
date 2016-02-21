@@ -2,6 +2,8 @@
 	The custom function is kinda pointless here.
 	However i figured it would make a good example.
 	As custom functions are amazing for shorting code and keeping your scripts cleaner.
+	Please note that atm the message is colorless and will be sent out as default which is yellow. 
+	The message will send before the players enter any chat channels and after the motd. So look for it there.
 */
 
 #include "ScriptMgr.h"
@@ -16,15 +18,12 @@ public:
 	void sendMessage(Player* plr)
 	{
 		std::ostringstream myString;
-		std::string color, serverName, plrName;
+		std::string plrName;
 
-		color = "|cffffffff";
-		serverName = "ChangeMe";
+		// Here we are setting the variable to the players name get function for easy use.
 		plrName = plr->GetName().c_str();
-		// Here is where we build the message the message is set to be only 255 characters long which is the normal size of a player message I believe. 
-		// So you need to keep your message below that or change it.
-		myString << color << plrName << ", Welcome to " << serverName << "!|r";
-
+		// Here is where we build the string.
+		myString << "We welcome our new player " << plrName << "!";
 		// This is where the message is sent to the world.
 		sWorld->SendServerMessage(SERVER_MSG_STRING, myString.str().c_str(), 0);
 	}

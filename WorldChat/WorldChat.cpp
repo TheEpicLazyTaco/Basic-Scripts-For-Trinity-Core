@@ -22,21 +22,29 @@ public:
 		if (!*args)
 			return false;
 
+		// This gives us a variable to use instead of typing it out the entire thing over and over. 
+		// Which might be a lil dumb here because i only use it once. But who knows maybe you will edit this script and use it.
 		Player* plr = handler->GetSession()->GetPlayer();
 
-		std::string message;
-		std::ostringstream cstring;
+		// Our other variables.
+		std::string plrName, color, message;
+		std::ostringstream myString;
+
+		// Here we are setting the variable to the players name get function for easy use.
+		plrName = plr->GetName().c_str();
+		// This is the color variable Change this if you want to change the color of the messages.
+		color = "|cfffebfbe";
+		// This just tells the script to assign the text players type to the message variable so we can use it.
 		message = args;
 
+		// This is where we build our string to send to the world.
 		if (plr->isGMChat())
-			cstring << "|cfffebfbe[World] |TInterface\\ChatFrame\\UI-ChatIcon-Blizz.blp:0:2:0:-3|t [" << plr->GetName() << "]: " << message;
+			myString << color << "[World] |TInterface\\ChatFrame\\UI-ChatIcon-Blizz.blp:0:2:0:-3|t [" << plrName << "]: " << message;
 		else
-			cstring << "|cfffebfbe[World] [" << plr->GetName() << "]: " << message;
+			myString << color << "[World] [" << plrName << "]: " << message;
 
-		char mess[255];
-		snprintf(mess, 255, cstring.str().c_str());
-		sWorld->SendGlobalText(mess, NULL);
-
+		// This is where the message is sent to the world.
+		sWorld->SendServerMessage(SERVER_MSG_STRING, myString.str().c_str(), 0);
 		return true;
 	}
 };
